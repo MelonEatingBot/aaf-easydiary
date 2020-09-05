@@ -15,7 +15,7 @@ android:
 before_script:
         - chmod +x gradlew
         - touch local.properties
-        - echo >> "storeFile=data"
-        - echo >> "storePassword=123456789"
+        - echo "storeFile=data" >> local.properties
+        - echo "storePassword=123456789" >> local.properties
 
 script: "./gradlew build"
